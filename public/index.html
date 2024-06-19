@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Portfolio</title>
+    <style>
+    header{
+            height: 600px;
+            background-image: linear-gradient(279deg,rgb(170, 49, 69),yellow,rgb(151, 43, 61));
+        }
+        .topics{
+            font-family: Berlin sans FB;
+            word-spacing: 20px;
+            padding-top: 40px;
+            padding-left: 725px;
+            font-size: large;
+            cursor: grab;
+            position: sticky;
+            top: 0px;
+            background-image: linear-gradient(279deg,rgb(170, 49, 69),yellow,rgb(151, 43, 61)); 
+        }
+        button{
+            background-color: rgba(231, 122, 140, 0.932);
+            border-radius: 20px;
+             height: 40px;
+             width: 100px;
+             border: none;
+             margin-left: 600px;
+             cursor: grab;
+        }
+        button:hover{
+            background-color: yellow;
+            cursor: grab;
+            transition: 1s;
+            border: 1px solid black;
+        }
+        .tophead{
+            padding-left: 450px;
+            padding-top: 150px;
+        }
+        h2{
+            padding-left: 40px;
+        }
+        .sec-ctg{
+            background-color: yellow;
+            word-spacing: 10px;
+            height: 30px;
+            width: 800px;
+            text-align: center;
+            margin-left: 250px;
+            box-shadow: gray 10px 10px 20px;
+            padding: 5px;
+            margin-top: 80px;
+        }
+        h1{
+            padding-top: 80px;
+        }
+        .sec-ctg:hover{
+            color: rgb(187, 73, 92);
+            cursor: grab;
+            transition: 1s;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 6fr 3fr 3fr;
+            margin-top: 40px;
+        }
+        .w1{
+            background-image: url("work1.jpg");
+            height: 500px;
+            width: 500px;
+            border-radius: 10px;
+            margin-left: 100px;
+        }
+       .w2{
+            background-image: url("work2.jpg");   
+            height: 250px;
+            width: 250px;
+         margin-left: 20px;
+         border-radius: 10px;
+        }
+        .w3{
+            background-image: url("work3.jpg"); 
+            height: 250px;  
+            width: 250px;
+            border-radius: 10px;
+            margin-left: 10px;
+        }
+        .w4{
+            background-image: url("work4.jpg");   
+            height: 200px;  
+            width: 500px;
+            margin-left: 680px;
+            margin-top: -220px;
+        }
+        .l-cnt{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            margin-top: 30px;
+        }
+        .w5{
+            background-image: url("work5.jpg");
+            height: 200px;  
+            width: 500px;
+            border-radius: 10px;
+            margin-left: 150px;
+        }
+        .w8{
+            background-image: url("work8.jpg");
+            height: 500px;
+            width: 500px;
+            border-radius: 10px;
+            margin-left: 20px;
+        }
+        .d-pic {
+            display: flex;
+            margin-left: 120px;
+            margin-top: -270px;
+          
+        }
+        .w7{
+            background-image: url("work7.jpg");
+            height: 250px;  
+            width: 250px;
+            border-radius: 10px;
+            margin-left: 20px;
+
+        }
+        .w6{
+            background-image: url("work6.jpg");
+            height: 250px;  
+            width: 250px;
+            border-radius: 10px;
+            margin-left: 20px;
+        }
+        main{
+            margin-top: 80px;
+            height: 768px;
+            background-color: rgb(253, 251, 251);
+        }
+        .self{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+        }
+        .ipic{
+            background-image: url("about-img.png");
+            height: 500px;
+            width: 400px;
+           margin-top: 200px;
+           margin-left: 80px;
+           margin-bottom: 70px;
+        }
+        .myself{
+            margin-top: 250px;
+        }
+        .info{
+          margin-left: 20px; 
+          margin-top: 50px; 
+          background-color: white;
+            border: 1px solid black;
+        }
+        .info:hover{
+            background-color: rgb(153, 66, 66);
+            border: 1px solid rgb(180, 81, 81);
+            cursor: grab;
+            transition: 1s;
+        }
+        .gmail{
+            background-image: url("banner.webp");
+            height: 600px;
+            padding-top: 50px;
+        }
+        .input-group{
+            width: 500px;
+            margin-left: 350px;
+            margin-top: 70px;
+            border: 2px solid black;
+            border-radius: 20px;
+        }
+        .form-control{
+            border-radius: 20px;
+        }
+        footer{
+           height: 600px;
+           margin-top: 400px;
+           background-color: yellow;
+        }  
+        .foot{
+            padding: 200px;
+            word-spacing: 5px;
+        }
+        h3{
+            padding-left: 250px;
+            padding-top: -30px;
+        }
+        .icon{
+            word-spacing: 40px;
+            font-size: 40px;
+            color: rgba(179, 179, 179, 0.966);
+            padding-left: 180px;
+        }
+        .f-l{
+            font-weight: bold;
+            padding-left: 120px;
+            padding-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="topics">
+         <span>Home</span>
+         <span>About</span>
+         <span>Portfolio</span>
+         <span>Pages</span>
+         <span>Blog</span>
+         <span>Contacts</span>
+        </div>
+        <div class="tophead">
+            <h1><font face="cooper" size="7">Steve Henriques</font></h1>
+        <h2><font face="castellar" size="4">Personal Portfolio Website</font></h2>
+        </div>
+        <button>Hire Me</button>
+    </header>
+    <section >
+    <font face="Algerian" size="5" align="center"> <h1>Latests Works</h1></font>
+    <font color="gray"><p align="center">If you are looking at blank cassettes on the web, you may be very confused at <br>the difference in price. may see some for as low as $.17 each.</p></font>
+    <div class="sec-ctg">
+        <span>AllCategories</span>
+        <span>Branding</span>
+        <span>CreativeWork</span>
+        <span>WebDesign</span>
+    </div>
+    <div class="container">
+        <div class="w1">work1</div>
+       <div class="w2"></div>
+       <div class="w3"></div>
+    </div>
+    <div class="w4"></div>
+    <div class="l-cnt">
+     <div class="w5"></div>
+     <div class="w8"></div>
+    </div>
+    <div class="d-pic">
+        <div class="w7"></div>
+        <div class="w6"></div>
+    </div>
+    <main>
+        <div class="self">
+            <div class="ipic"></div>
+            <div class="myself">
+    <font face="cooper" size="5"><h1>About Myself</h1></font>
+    <font color="gray"><p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women,  <br> our behavior on the job is beyond reproach. inappropriate behavior is often laughed. inappropriate behavior is often laughed off as “boys will be boys,” women face higher. <br><br><br>
+
+        That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</p></font>
+        <button class="info">My Info</button>
+            </div>
+        </div>
+            <div class="gmail">
+                <font face="cooper" color="white" align="center" size="5"><h1>Join Our Newsletter</h1></font>
+                <font color="white" align="center"><p>If you are looking at blank cassettes on the web, you may be very confused at <br>
+                     the difference in price. You may see some for as low as $.17 each.</p></font>
+                  <form action="" class="input-group" onsubmit="alert(Subscribed sucessfully)">
+                       <input type="email" name="email" placeholder="Your email address" class="form-control">
+                    <button>subscribe</button>
+                  </form>
+            </div>
+    </main>
+    </section>
+    <footer>
+       <div class="foot">
+        <h3>Follow Me</h3>
+       <div class="icon">
+        <span class="bi bi-facebook"></span>
+        <span class="bi bi-twitter"></span>
+        <span class="bi bi-globe"></span>
+        <span class="bi bi-alexa"></span>
+       </div>
+      <font face="Corbel" size="2" > <p class="f-l">Copyright &copy;2024 All rights reserved | This template is made with <span class="bi bi-heart"></span> by Colorlib</p></font>
+    </footer>
+       </div>
+</body>
+</html>
